@@ -7,12 +7,15 @@ import {overmind} from './Others/OvermindHelper'
 import CounterDemo from "./Components/CounterDemo";
 import {ThemeProvider} from '@material-ui/core/styles';
 import {theme} from './Others/Theme'
+import Login from "./Components/Login";
+import Dashboard from "./Components/Dashboard";
+import Profile from "./Components/Profile";
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider value={overmind}>
             <ThemeProvider theme={theme}>
-                <CounterDemo/>
+                <Profile />
             </ThemeProvider>
         </Provider>
     </React.StrictMode>,
